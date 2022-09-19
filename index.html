@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/ea4456f54e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <h1 class="header--1">×,* Pixel °*﹊</h1>
+    <div class="container">
+      <div class="grid-container"></div>
+      <div class="control-panel panel">
+        <div class="current-color-display">
+          <span>Current color:</span>
+          <div class="color-group">
+            <div
+              class="color color--1 color-secondary current-color"
+              data-color="1"
+            ></div>
+            <div
+              class="color color--2 color-primary unpicked-color"
+              data-color="2"
+            ></div>
+            <div
+              class="color color--3 color-ternary unpicked-color"
+              data-color="3"
+            ></div>
+            <div
+              class="color color--4 color-black unpicked-color"
+              data-color="4"
+            ></div>
+          </div>
+        </div>
+        <div class="rgb__panel">
+          <div class="display-group">
+            <label for="r" data-color="R:">R:</label>
+            <input type="text" class="display displayRGB displayR" />
+          </div>
+          <div class="display-group">
+            <label for="g" data-color="G:">G:</label>
+            <input type="text" class="display displayRGB displayG" />
+          </div>
+          <div class="display-group">
+            <label for="b" data-color="B:">B:</label>
+            <input type="text" class="display displayRGB displayB" />
+          </div>
+        </div>
+        <div class="btn btn__reset">Reset</div>
+        <div class="btn btn__change">Change Color</div>
+      </div>
+      <div class="filter-panel panel">
+        <div class="grid-group">
+          <h2>Size:</h2>
+          <input type="number" class="input__grid-size" placeholder="Size" />
+        </div>
+        <div class="filter-group">
+          <h2>Filter:</h2>
+          <div class="btn btn__reflect">Reflection</div>
+          <div class="btn btn__bw">Black White</div>
+          <div class="btn btn__blur">Blur</div>
+        </div>
+        <div class="bg-music-group">
+          <audio
+            autoplay
+            controls="controls"
+            loop
+            preload="auto"
+            src="./SLOWEST-TEMPO2019-12-11_-_Retro_Platforming_-_David_Fesliyan.mp3"
+            class="bg-music"
+          >
+            your browser is not supported
+          </audio>
+
+          <div class="bg-music-control music-play">
+            <i class="fas fa-volume-up"></i>
+            <!-- <i class="fas fa-volume-mute"></i> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
